@@ -1,0 +1,7 @@
+set(detect_SETUP_PY_SETUP_MODULE "distutils.core")
+set(detect_SETUP_PY_VERSION "0.0.0")
+set(detect_SETUP_PY_SCRIPTS "")
+set(detect_SETUP_PY_PACKAGES "detect")
+set(detect_SETUP_PY_PACKAGE_DIRS "src/detect")
+set(detect_SETUP_PY_MODULES "")
+set(detect_SETUP_PY_MODULE_DIRS "")

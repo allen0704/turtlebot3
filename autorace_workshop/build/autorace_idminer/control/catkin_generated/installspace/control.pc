@@ -1,0 +1,8 @@
+prefix=/home/allen12/autorace_workshop/install
+
+Name: control
+Description: Description of control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

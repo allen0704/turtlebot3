@@ -1,0 +1,7 @@
+<launch>
+  <!-- tunnel detection -->
+  <node pkg="detect" type="goal" name="goal" output="screen">
+    <remap from="/control/cmd_vel" to="/cmd_vel" />
+    
+  </node>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/allen12/autorace_workshop/devel
+
+Name: detect
+Description: Description of detect
+Version: 0.0.0
+Cflags: -I/home/allen12/autorace_workshop/devel/include
+Libs: -L${prefix}/lib 
+Requires: dynamic_reconfigure
