@@ -125,8 +125,8 @@ class DetectSign():
         # converting raw image to opencv image
         # cv_image_input = CvBridge.imgmsg_to_cv2(image_msg, "bgr8")
 
-        MIN_MATCH_COUNT = 7 #9
-        MIN_MSE_DECISION = 30000
+        MIN_MATCH_COUNT = 13 #9
+        MIN_MSE_DECISION = 50000
 
         # find the keypoints and descriptors with SIFT
         kp1, des1 = self.sift.detectAndCompute(cv_image_input,None)
@@ -260,14 +260,14 @@ class DetectSign():
         goalPoseStamped.header.frame_id = "map"
         goalPoseStamped.header.stamp = rospy.Time.now()
 
-        goalPoseStamped.pose.position.x = 0.34
-        goalPoseStamped.pose.position.y = -3.16
+        goalPoseStamped.pose.position.x = -8.7
+        goalPoseStamped.pose.position.y = 17.9
         goalPoseStamped.pose.position.z = 0.0
 
         goalPoseStamped.pose.orientation.x = 0.0
         goalPoseStamped.pose.orientation.y = 0.0
-        goalPoseStamped.pose.orientation.z = -0.70
-        goalPoseStamped.pose.orientation.w = 0.70
+        goalPoseStamped.pose.orientation.z = -0.23
+        goalPoseStamped.pose.orientation.w = 0.97
 
         self.pub_goal_pose_stamped.publish(goalPoseStamped)
 
@@ -277,14 +277,14 @@ class DetectSign():
         goalPoseStamped1.header.frame_id = "map"
         goalPoseStamped1.header.stamp = rospy.Time.now()
 
-        goalPoseStamped1.pose.position.x = 0.4
-        goalPoseStamped1.pose.position.y = -0.04
+        goalPoseStamped1.pose.position.x = -7.3
+        goalPoseStamped1.pose.position.y = 12.0
         goalPoseStamped1.pose.position.z = 0.0
 
         goalPoseStamped1.pose.orientation.x = 0.0
         goalPoseStamped1.pose.orientation.y = 0.0
-        goalPoseStamped1.pose.orientation.z = -0.7
-        goalPoseStamped1.pose.orientation.w = 0.7
+        goalPoseStamped1.pose.orientation.z = 0.93
+        goalPoseStamped1.pose.orientation.w = 0.35
 
         self.pub_goal_pose_stamped.publish(goalPoseStamped1)    
 

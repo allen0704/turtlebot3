@@ -3,7 +3,7 @@
   <!-- tunnel control -->
   <!-- Arguments -->
   <arg name="model" default="burger"/>
-  <arg name="map_file" default="$(find control)/maps/map721.yaml"/>
+  <arg name="map_file" default="$(find control)/maps/map719-3.yaml"/>
   <arg name="open_rviz" default="true"/>
 
   <!-- Turtlebot3 -->
@@ -16,9 +16,9 @@
 
   <!-- AMCL -->
   <include file="$(find turtlebot3_navigation)/launch/amcl.launch">
-    <arg name="initial_pose_x" default="0.4"/>
-    <arg name="initial_pose_y" default="-0.04"/>
-    <arg name="initial_pose_a" default="-1.5"/> 
+    <arg name="initial_pose_x" default="-7.3"/>
+    <arg name="initial_pose_y" default="12.0"/>
+    <arg name="initial_pose_a" default="2.5"/> 
   </include>
 
   <!-- move_base -->
